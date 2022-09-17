@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<title>@Title</title>
+<head>
+</head>
+<body>
+    <table width="100%" style="padding: 1em;">
+        <tbody>
+            <tr>
+                <td><h1>@NombreEmpresa</h1></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <h2>RIF: @RIF</h2>
+                                <h2>Dirección: @Direccion</h2>
+                                <h2>Teléfono: @Telefono</h2>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table width="100%" style="padding: 1em;">
+        <tbody>
+            <tr>
+                <td width="60%">
+                    <h3>Información de cliente</h3>
+                    <h4>Nombre: @Nombre</h4>
+                    <h4>C.I: @Cedula</h4>
+                    <h4>Teléfono: @ClienteTelefono</h4>
+                </td>
+                <td width="40%">
+                    <h3>Factura</h3>
+                    <h4>Nro. Factura: @NroFactura</h4>
+                    <h4>Fecha Factura: @FechaFactura</h4>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table width="100%">
+        <thead>
+            <tr style="font-size: 1.2em; text-align: left">
+                <th>Descripción</th>
+                <th>Cant.</th>
+                <th>IVA</th>
+                <th>Precio U.</th>
+                <th>Precio Total</th>
+            </tr>
+        </thead>
+        <!--<tbody style="text-align: center">
+            <tr>
+                <td>Hello</td>
+                <td>Hello</td>
+                <td>Hello</td>
+                <td>Hello</td>
+                <td>Hello</td>
+            </tr>
+        </tbody>-->
+        @ListaProductos
+    </table>
+
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td style="font-size: 3em;">ㅤ</td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <!--<table>
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 1em; font-weight: 900">Pagos:</td>
+                            </tr>
+                            <tr>-->
+                                <!--@ListaPagos-->
+                            <!--</tr>
+                        </tbody>
+                    </table>-->
+                    <ul>
+                        <li>
+                            <p><h3>Pagos:</h3></p>
+                        </li>
+                        @ListaPagos
+                    </ul>
+                </td>
+                <td width="50%">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 1.2em;">Base Imp: @BaseImponible</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 1.2em;">IVA: @IVA</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 1.2em;">Exento: @Exento</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 1.2em; font-weight: 900">Total: @Total</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
